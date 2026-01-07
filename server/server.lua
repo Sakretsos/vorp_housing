@@ -68,7 +68,7 @@ RegisterServerEvent("vorp_housing:Server:OpenStorage", function(index, storageIn
     if not house then return print("House not found") end
 
     local isOwner <const> = house.OWNERS[charId]
-    if not isOwner then return print("Player is not the owner of the house") end
+    if not isOwner then return print(CONFIG.TRANSLATION.not_owner) end
 
     if not isOwner.STORAGE then return print("Player is not allowed to access storages") end
 

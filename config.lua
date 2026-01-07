@@ -1,12 +1,18 @@
 ---@class vorp_housing_config
 local CONFIG = {}
+-- WEBHOOK TO MONITOR STORAGES IS FOUND ON THE SERVER.LUA FILE
 
-CONFIG.DEV_MODE = true -- set to true when you need to restart script to do your tests
+CONFIG.DEV_MODE = false -- set to true when you need to restart script to do your tests
 
--- HOUSES CANNOT BE BOUGHT IN GAME HANDLE THAT IN YOUR DISCORD TICKETS
+CONFIG.TRANSLATION = {
+    not_owner = "You are not the owner of this house",
+    press = "press",
+}
+
+
 -- DOORS ARE HANDLED IN VORP DOORLOCKS
 CONFIG.HOUSES = {
-    -- WIDOW ROCK HOUSE
+    -- WIDOW ROCK HOUSE 1
     {
         POSITION = vector3(-397.7, 1727.66, 216.49), -- POSITION OF THE CENTER OF THE HOUSE and for blip
         BLIP = {

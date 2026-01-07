@@ -27,7 +27,7 @@ local function registerLocations()
             {
                 type = "Press",
                 key = `INPUT_SHOP_SELL`, -- R
-                label = 'press',
+                label = CONFIG.TRANSLATION.press,
                 mode = 'Standard',
             },
         }
@@ -38,7 +38,7 @@ local function registerLocations()
         if not location then return end
 
         if not location.OWNERS[CHARID] then
-            return Core.NotifyObjective("You are not the owner of this house", 5000)
+            return Core.NotifyObjective(CONFIG.TRANSLATION.not_owner, 5000)
         end
 
         local storage <const> = location.STORAGES[index]
