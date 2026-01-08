@@ -55,10 +55,6 @@ RegisterNetEvent("vorp_housing:Client:RegisterHouse", function(index, charId)
     local value <const> = CONFIG.HOUSES[OWNED_INDEX]
     if not value then return end
 
-    if not value.BLIP.ENABLE then return end
-
-    if not value.OWNERS[CHARID] then return end
-
     if running then return end
     running = true
 
