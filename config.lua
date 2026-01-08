@@ -12,13 +12,14 @@ CONFIG.TRANSLATION = {
 
 -- DOORS ARE HANDLED IN VORP DOORLOCKS
 CONFIG.HOUSES = {
+    -- Widows Rock House 1
     {
         POSITION = vector3(-397.7, 1727.66, 216.49), -- POSITION OF THE CENTER OF THE HOUSE and for blip
         BLIP = {
             ENABLE = true,                           -- Will display the blip of this house if player owns it
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Widows Rock House 1",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -59,13 +60,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Cabin at Braithwaite Manor
     {
         POSITION = vector3(1118.0621, -1987.8922, 55.3475),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Cabin at Braithwaite Manor",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -92,13 +94,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Cabin at Lake O'Creagh's
     {
         POSITION = vector3(1700.6041, 1511.0630, 147.8734),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Cabin at Lake O'Creagh's",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -126,13 +129,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Cabin on the Southfield Plains
     {
         POSITION = vector3(1134.9661, -979.6726, 69.3992),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Cabin on the Southfield Plains",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -159,13 +163,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Cabin in the Roanoke Valley
     {
         POSITION = vector3(2625.1238, 1695.9159, 115.6895),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Cabin in the Roanoke Valley",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -192,13 +197,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House in Rhodes
     {
         POSITION = vector3(1112.8748, -1301.4908, 66.4053),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House in Rhodes",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -229,13 +235,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House in the snow town
     {
         POSITION = vector3(-1351.5906, 2439.3948, 308.4406),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House in the snow town",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -263,13 +270,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House in the snow
     {
         POSITION = vector3(-554.4449, 2703.8315, 320.4272),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House in the snow",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -297,13 +305,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House in Valentine
     {
         POSITION = vector3(774.8596, 847.4821, 118.9179),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House in Valentine",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -332,13 +341,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Cabin on the Dakota River
     {
         POSITION = vector3(-689.8939, 1044.0026, 135.0041),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Cabin on the Dakota River",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -365,13 +375,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House on the Dakota River
     {
         POSITION = vector3(-612.9479, -27.5009, 85.9752),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House on the Dakota River",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -401,13 +412,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Big Valley Farm House
     {
         POSITION = vector3(-2594.6492, 457.3839, 146.9972),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Big Valley Farm House",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -435,13 +447,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- House on the Little Creek River
     {
         POSITION = vector3(-2177.1870, 718.3368, 122.6199),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "House on the Little Creek River",
+            NAME = "My House",
         },
 
         OWNERS = {
@@ -469,13 +482,14 @@ CONFIG.HOUSES = {
         }
     },
 
+    -- Farm House on the outskirts of Blackwater
     {
         POSITION = vector3(-1641.7750, -1360.7200, 84.4027),
         BLIP = {
             ENABLE = true,
             SPRITE = `blip_mp_base`,
             STYLE = `BLIP_STYLE_PROPERTY_OWNER`,
-            NAME = "Farm House on the outskirts of Blackwater",
+            NAME = "My House",
         },
 
         OWNERS = {
