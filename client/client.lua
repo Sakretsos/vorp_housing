@@ -82,4 +82,27 @@ if CONFIG.DEV_MODE then
         if resource ~= GetCurrentResourceName() then return end
         TriggerServerEvent("vorp_housing:Server:DevMode")
     end)
+
+    local blips <const> = {}
+    RegisterNetEvent("vorp_housing:Client:ShowHouses", function()
+        local houses <const> = CONFIG.HOUSES
+
+        for _, blip in ipairs(blips) do
+            Blips:Remove(blip)
+        end
+
+        table.wipe(blips)
+
+        for index, house in ipairs(houses) do
+            local blip = Blips:Create('coords', {
+                Pos = house.POSITION,
+                Blip = `BLIP_STYLE_PROPERTY_OWNER`,
+                Options = {
+                    sprite = `blip_mp_base`,
+                    name = "House index: " .. index,
+                },
+            })
+            table.insert(blips, blip:GetHandle())
+        end
+    end)
 end

@@ -100,4 +100,14 @@ if CONFIG.DEV_MODE then
         local character <const> = user.getUsedCharacter
         registerHouse(_source, character)
     end)
+
+    RegisterCommand(CONFIG.COMMAND, function(source)
+        local user <const> = Core.getUser(source)
+        if not user then return end
+
+        local group <const> = user.getGroup
+        if group ~= "admin" then return Core.NotifyObjective(CONFIG.TRANSLATION.not_admin, 5000) end
+
+        TriggerClientEvent("vorp_housing:Client:ShowHouses", source)
+    end, false)
 end

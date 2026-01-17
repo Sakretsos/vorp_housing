@@ -2,10 +2,13 @@
 local CONFIG = {}
 -- WEBHOOK TO MONITOR STORAGES IS FOUND ON THE SERVER.LUA FILE
 
-CONFIG.DEV_MODE = false -- set to true when you need to restart script to do your tests
+CONFIG.DEV_MODE = false       -- set to true when you need to restart script to do your tests
+
+CONFIG.COMMAND = "showHouses" -- command to be used while in dev mode to show all houses to keep track of what you added
 
 CONFIG.TRANSLATION = {
     not_owner = "You are not the owner of this house",
+    not_admin = "You are not an admin to use this command",
     press = "press",
 }
 
@@ -89,7 +92,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             3921310299 -- Front Door
         }
     },
@@ -123,7 +126,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             868379185, -- Front Door
             640077562  -- Back Door
         }
@@ -158,7 +161,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             3929468747 -- Front Door
         }
     },
@@ -192,7 +195,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             1574473390 -- Front Door
         }
     },
@@ -299,7 +302,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             872775928, -- Front Door
             2385374047 -- Back Door
         }
@@ -337,7 +340,7 @@ CONFIG.HOUSES = {
         DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             4123766266, -- Front Door
             1002666274, -- Room 1 Door
-            417362979  -- Back Door
+            417362979   -- Back Door
         }
     },
 
@@ -370,7 +373,7 @@ CONFIG.HOUSES = {
                 BLACKLISTED_ITEMS = {},
             }
         },
-        DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
+        DOORS = {      -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             1434140379 -- Front Door
         }
     },
@@ -407,8 +410,8 @@ CONFIG.HOUSES = {
         DOORS = {       -- DOOR IDS, MUST BE IN VORP DOORLOCKS TO BE DETECTED THESE DOORS DONT NEED PERMISSIONS IN VORP DOORLOCKS SCRIPT
             1189146288, -- Front Door
             365712512,  -- Room 1 Door
-            138361190, -- Room 2 Door
-            906448125 -- Back Door
+            138361190,  -- Room 2 Door
+            906448125   -- Back Door
         }
     },
 
